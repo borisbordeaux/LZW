@@ -58,7 +58,7 @@ public class LZW {
         result += getKeyByValue(dict, chain);
 
         //print dict (for non ascii values)
-        System.out.println("dictionnaire compression :\n");
+        System.out.println("dict after compression :\n");
         for (int i = 256; i < dict.size(); i++) {
             System.out.println(String.valueOf(i) + " = " + dict.get(i).replace(" ", "_"));
         }
@@ -126,7 +126,7 @@ public class LZW {
         }
 
         //print dict
-        System.out.println("dictionnaire decompression :\n");
+        System.out.println("dict after uncompression :\n");
         for (int i = 256; i < dict.size(); i++) {
             System.out.println(String.valueOf(i) + " = " + dict.get(i).replace(" ", "_"));
         }
