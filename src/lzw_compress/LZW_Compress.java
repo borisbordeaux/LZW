@@ -16,14 +16,14 @@ public class LZW_Compress {
         //message to compress
         String msg = "0 0 1 1 0 0 1 1 0 0 1 1 0 0 1 1 1 1 0 0 1 1 0 0 1 1 0 0 1 1 0 0 ";
         
-        //compress and uncompress message
+        //compress and decompress message
         String compressed = LZW.compress(msg);
-        String uncompressed = LZW.uncompress(compressed);
+        String decompressed = LZW.decompress(compressed);
 
         //display results
         System.out.println("message     : " + msg);
         System.out.println("compressed  : " + compressed);
-        System.out.println("uncompressed: " + uncompressed);
+        System.out.println("decompressed: " + decompressed);
     }
 
 }
